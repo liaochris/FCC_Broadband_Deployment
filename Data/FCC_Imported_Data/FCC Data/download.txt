@@ -1,0 +1,3 @@
+Download the following versions from https://www.fcc.gov/general/broadband-deployment-data-fcc-form-477
+We want the US Fixed Satellite Data. 
+December 2014 version 3, June 2015 version 5, December 2015 version 4, June 2016 version 4, December 2016 version 2, June 2017 version 3, December 2017 version 3, June 2018 version 1, December 2018 version 3, June 2019 version 2
