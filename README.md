@@ -7,7 +7,7 @@ I used data provided by the FCC (Form 477) to calculate the concentration of bro
 * `Analysis/FIPS_hhi_old.R` and `Analysis/TRACTS_hhi_old.R` are the original files that were used to calculate HHI concentration in broadband deployment markets
     * They are now deprecated because they were made without considering broadband uptake
     * They used data from `Data/export_fips/results` and `Data/export_tract/results` to calculate HHI
-    * `Data/export_fips` and ``Data/export_tract` basically calculate the share of the broadband market holding companies hold at the corresponding geographic level
+    * `Data/export_fips` and `Data/export_tract` basically calculate the share of the broadband market holding companies hold at the corresponding geographic level
         * Each folder's corresponding `scripts` folder contains the scripts used to produce the data in `results` 
         * These were produced on UChicago's Midway2 RCC Computing Cluster
 * `Analysis/Fips_Broadband_Choropleth.ipynb` and `Analysis/Tract_Broadband_Choropleth.ipynb` created the old choropleth maps corresponding to the old HHI calculations
@@ -21,6 +21,7 @@ I used data provided by the FCC (Form 477) to calculate the concentration of bro
     * These are the commands I used (after navigating to the project folder)
         * For aggregating on tracts ```convert -delay 100 Analysis/tracts/tracts_compressed/*.jpg -loop 0 hhi_tracts.gif```
         * ```convert -delay 100 Analysis/fips/*.jpg -loop 0 hhi_fips.gif```
+* Unfortunately the data in `Data/export_fips` and `Data/export_tract` have been lost to time, but the results in the jupyter notebooks can still be replicated using `Data/cleaned/fips_hhi_new.csv` and `Data/cleaned/tract_hhi_new.csv`, the new HHI calculations. The new files follow similar trends but incorporate the outside option when calculating HHI which results in lower figures than the previous 
 ### Revised Calculations
 * After obtaining data for broadband uptake from `Data/uptake` I used this data to recalculate HHI
     * I have not updated the visuals, but the new calculations are done by the `Analysis/HHI_new.R` script
